@@ -29,7 +29,7 @@ from packaging import version
 from torch.utils.data import Dataset
 
 
-if version.parse(torch.__version__) >= version.parse("2.5.0"):
+if version.parse(torch.__version__) == version.parse("2.5.0"):
     from torch.utils.data.distributed import DistributedSampler, _T_co
 else:
     from torch.utils.data.distributed import DistributedSampler
